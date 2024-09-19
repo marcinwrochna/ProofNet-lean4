@@ -8,6 +8,7 @@ package «proofNet-lean4» {
   "-lctranslate2"
   ]
 }
+require formal from "./formal"
 
 require mathlib from git
   "https://github.com/leanprover-community/mathlib4.git"
