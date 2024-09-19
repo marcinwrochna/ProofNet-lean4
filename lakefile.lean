@@ -3,6 +3,10 @@ open Lake DSL
 
 package «proofNet-lean4» {
   -- add any package configuration options here
+  moreLinkArgs := #[
+  "-L./.lake/packages/LeanCopilot/.lake/build/lib",
+  "-lctranslate2"
+  ]
 }
 
 require mathlib from git
