@@ -175,7 +175,7 @@ theorem exercise_4_4_9 (p : ℕ) (hp : Nat.Prime p) :
   (∃ S : Finset (ZMod p), S.card = (p-1)/2 ∧ ¬ ∃ x : ZMod p, x^2 = p) :=
 sorry
 
-theorem exercise_4_5_16 {p n: ℕ} (hp : Nat.Prime p)
+theorem herstein_exercise_4_5_16 {p n: ℕ} (hp : Nat.Prime p)
   {q : Polynomial (ZMod p)} (hq : Irreducible q) (hn : q.degree = n) :
   ∃ is_fin : Fintype $ Polynomial (ZMod p) ⧸ span ({q} : Set (Polynomial $ ZMod p)),
   @card (Polynomial (ZMod p) ⧸ span {q}) is_fin = p ^ n ∧
