@@ -1,0 +1,11 @@
+import Artin
+import Axler
+import Cambridge_Tripos
+import Dummit_Foote
+import Herstein
+import Ireland_Rosen
+import Munkers
+import Pough
+import Putnam
+import Rudin
+import Shakarachi
