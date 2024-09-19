@@ -1,9 +1,9 @@
 import ProofNet.Artin
 import ProofNet.Axler
-import ProofNet.Cambridge_Tripos
-import ProofNet.Dummit_Foote
+import ProofNet.Cambridge-Tripos
+import ProofNet.Dummit-Foote
 import ProofNet.Herstein
-import ProofNet.Ireland_Rosen
+import ProofNet.Ireland-Rosen
 import ProofNet.Munkers
 import ProofNet.Pough
 import ProofNet.Putnam
