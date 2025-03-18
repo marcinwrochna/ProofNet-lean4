@@ -119,7 +119,7 @@ theorem axler_exercise_6_13 {V : Type*} [NormedAddCommGroup V] [InnerProductSpac
   ‖v‖^2 = ∑ i : Fin n, ‖⟪v, e i⟫_ℂ‖^2 ↔ v ∈ Submodule.span ℂ (e '' Set.univ) :=
 sorry
 
-theorem axler_exercise_6_16 {K V : Type*} [IsROrC K] [NormedAddCommGroup V] [InnerProductSpace K V]
+theorem axler_exercise_6_16 {K V : Type*} [RCLike K] [NormedAddCommGroup V] [InnerProductSpace K V]
   {U : Submodule K V} :
   U.orthogonal = ⊥  ↔ U = ⊤ :=
 sorry
@@ -153,7 +153,7 @@ theorem axler_exercise_7_11 {V : Type*} [NormedAddCommGroup V] [InnerProductSpac
   ∃ (S : End ℂ V), S ^ 2 = T :=
 sorry
 
-theorem axler_exercise_7_14 {𝕜 V : Type*} [IsROrC 𝕜] [NormedAddCommGroup V]
+theorem axler_exercise_7_14 {𝕜 V : Type*} [RCLike 𝕜] [NormedAddCommGroup V]
   [InnerProductSpace 𝕜 V] [FiniteDimensional 𝕜 V]
   {T : End 𝕜 V} (hT : IsSelfAdjoint T)
   {l : 𝕜} {ε : ℝ} (he : ε > 0) : ∃ v : V, ‖v‖= 1 ∧ (‖T v - l • v‖ < ε →

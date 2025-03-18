@@ -1,0 +1,13 @@
+name = "proofnet"
+defaultTargets = ["ProofNet"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.10.0"
+
+[[lean_lib]]
+name = "ProofNet"

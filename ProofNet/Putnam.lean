@@ -41,7 +41,7 @@ theorem putnam_exercise_2010_a4 (n : ℕ) :
 sorry
 
 theorem putnam_exercise_2001_a5 :
-  ∃! a n : ℕ, a > 0 ∧ n > 0 ∧ a^(n+1) - (a+1)^n = 2001 :=
+  ∃! p : ℕ × ℕ, (let (a, n) := p; a > 0 ∧ n > 0 ∧ a^(n+1) - (a+1)^n = 2001) :=
 sorry
 
 theorem putnam_exercise_2000_a2 :

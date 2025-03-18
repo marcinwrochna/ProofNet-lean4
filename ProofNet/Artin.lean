@@ -19,7 +19,7 @@ theorem artin_exercise_2_4_19 {G : Type*} [Group G] {x : G}
 sorry
 
 theorem artin_exercise_2_8_6 {G H : Type*} [Group G] [Group H] :
-  center (G × H) ≃* (center G) × (center H) :=
+  Nonempty $ center (G × H) ≃* (center G) × (center H) :=
 sorry
 
 theorem artin_exercise_2_11_3 {G : Type*} [Group G] [Fintype G]

@@ -71,7 +71,7 @@ theorem dummit_foote_exercise_1_6_4 :
 sorry
 
 theorem dummit_foote_exercise_1_6_11 {A B : Type*} [Group A] [Group B] :
-  A × B ≃* B × A :=
+  Nonempty (A × B ≃* B × A) :=
 sorry
 
 theorem dummit_foote_exercise_1_6_17 {G : Type*} [Group G] (f : G → G)
@@ -280,7 +280,7 @@ sorry
 
 theorem dummit_foote_exercise_4_5_28 {G : Type*} [Group G] [Fintype G]
   (hG : card G = 105) (P : Sylow 3 G) [hP : P.Normal] :
-  CommGroup G :=
+  Nonempty (CommGroup G) :=
 sorry
 
 theorem dummit_foote_exercise_4_5_33 {G : Type*} [Group G] [Fintype G] {p : ℕ}
@@ -306,7 +306,7 @@ theorem dummit_foote_exercise_7_1_12 {F : Type*} [Field F] {K : Subring F}
 sorry
 
 theorem dummit_foote_exercise_7_1_15 {R : Type*} [Ring R] (hR : ∀ a : R, a^2 = a) :
-  CommRing R :=
+  Nonempty (CommRing R) :=
 sorry
 
 theorem dummit_foote_exercise_7_2_2 {R : Type*} [Ring R] (p : Polynomial R) :
@@ -408,5 +408,5 @@ theorem dummit_foote_exercise_9_4_11 :
 sorry
 
 theorem dummit_foote_exercise_11_1_13 {ι : Type*} [Fintype ι] :
-  (ι → ℝ) ≃ₗ[ℚ] ℝ :=
+  Nonempty $ (ι → ℝ) ≃ₗ[ℚ] ℝ :=
 sorry
