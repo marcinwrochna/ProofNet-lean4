@@ -1,7 +1,7 @@
 import Mathlib
 
 open Filter Set TopologicalSpace
-open scoped Topology
+open Topology
 noncomputable section
 
 theorem munkers_exercise_13_1 (X : Type*) [TopologicalSpace X] (A : Set X)
@@ -159,12 +159,12 @@ sorry
 
 theorem munkers_exercise_22_2a {X Y : Type*} [TopologicalSpace X]
   [TopologicalSpace Y] (p : X → Y) (h : Continuous p) :
-  QuotientMap p ↔ ∃ (f : Y → X), Continuous f ∧ p ∘ f = id :=
+  IsQuotientMap p ↔ ∃ (f : Y → X), Continuous f ∧ p ∘ f = id :=
 sorry
 
 theorem munkers_exercise_22_2b {X : Type*} [TopologicalSpace X]
   {A : Set X} (r : X → A) (hr : Continuous r) (h : ∀ x : A, r x = x) :
-  QuotientMap r :=
+  IsQuotientMap r :=
 sorry
 
 theorem munkers_exercise_22_5 {X Y : Type*} [TopologicalSpace X]
@@ -212,7 +212,7 @@ theorem munkers_exercise_23_9 {X Y : Type*}
 sorry
 
 theorem munkers_exercise_23_11 {X Y : Type*} [TopologicalSpace X] [TopologicalSpace Y]
-  (p : X → Y) (hq : QuotientMap p)
+  (p : X → Y) (hq : IsQuotientMap p)
   (hY : ConnectedSpace Y) (hX : ∀ y : Y, IsConnected (p ⁻¹' {y})) :
   ConnectedSpace X :=
 sorry
@@ -232,8 +232,8 @@ theorem munkers_exercise_25_4 {X : Type*} [TopologicalSpace X]
 sorry
 
 theorem munkers_exercise_25_9 {G : Type*} [TopologicalSpace G] [Group G]
-  [TopologicalGroup G] (C : Set G) (h : C = connectedComponent 1) :
-  IsNormalSubgroup C :=
+  [IsTopologicalGroup G] (C : Set G) (h : C = connectedComponent 1) :
+  ∃ C' : Subgroup G, C' = C ∧ C'.Normal :=
 sorry
 
 theorem munkers_exercise_26_11
