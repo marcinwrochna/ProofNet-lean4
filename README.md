@@ -1,5 +1,5 @@
 # ProofNet-lean4
-This is a Lean 4.19.0-rc2 version of the ProofNet dataset, originally https://github.com/zhangir-azerbayev/ProofNet.
+This is a Lean 4.19.0 version of the ProofNet dataset, originally https://github.com/zhangir-azerbayev/ProofNet.
 
 The original dataset (Lean 3) was released and maintained by Zhangir Azerbayev, Bartosz Piotrowski,  Hailey Schoelkopf, Edward W. Ayers, Dragomir Radev, and Jeremy Avigad (*ProofNet: Autoformalizing and Formally Proving Undergraduate-Level Mathematics*, [arxiv:2302.12433](https://arxiv.org/abs/2302.12433)), under an MIT license.
 
